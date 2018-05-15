@@ -24,6 +24,7 @@ public class App {
                 break;
             }
             channel.send(new Message(null, content));
+            log.info("members:{}",channel.getView().getMembers());
         }
         channel.close();
     }
